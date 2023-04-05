@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <title>Form Odin</title>
+</head>
+<body>
+    <div id="container">
+        <div id="img-container">
+            <div id="logo">
+            <img id="img-logo" src="/img/logo.png" alt="logo">
+            <p>ODINRAFFE</p>
+            </div>
+        <img id="img-bg" src="/img/imagem.jpg" alt="bg-logo-head">
+        </div>
+    <div id="form-div">
+        <div id="um">This is not a real online service! You know you need something  <br> like this in your life to help you realize your deepest dreams. <br> Sign up now to get started. <br><br> You know you want to.</div>
+        <div id="dois">
+            <div id="form-1">Let's do this!</div>
+            <div id="form-2">
+                <form action="" id="form">
+               <div> <label for="firstname">First Name</label>
+                <input type="text" required> </div>
+               <div> <label for="lastname">Last Name</label>
+                <input type="text" required> </div>
+
+                <div> <label for="email">Email</label>
+                    <input type="email" required> </div>
+                   <div> <label for="phone">Phone Number</label>
+                    <input type="number" required> </div>
+
+                    <div> <label for="password">Password</label>
+                        <input id="pass" type="password" onkeyup="check()" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required> </div>
+                       <div> <label for="password2">Confirm Password</label>
+                        <input id="cpass" type="password" onkeyup="check()" required> </div>
+                    </form>
+            </div>
+        </div>
+        <div id="tres">
+            <button id="btn" type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="">Log In</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
